@@ -91,6 +91,11 @@ footer {
   font-weight: 400;
 }
 
+.nav-logo:hover {
+    cursor: pointer;
+    text-shadow: rgb(0, 0, 0) 3px 0 3px;
+}
+
 .nav-logo span {
   font-weight: 700;
 }
@@ -107,7 +112,7 @@ nav li {
 }
 
 nav li:hover {
-  text-shadow: grey 2px 0 2px;
+  text-shadow: rgb(0, 0, 0) 2px 0 2px;
 }
 
 /* cuerpo */
@@ -156,7 +161,7 @@ nav li:hover {
 }
 
 .card:hover {
-    box-shadow:  grey 2px 0 2px;
+    box-shadow:  rgb(0, 0, 0) 2px 0 2px;
     
 }
 

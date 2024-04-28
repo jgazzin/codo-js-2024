@@ -1,12 +1,12 @@
 let usuario = prompt('Ingrese su edad:');
 const edadPermitida = 18;
-let msg= '';
+let msg;
 
-while ( isNaN(usuario) || usuario === '' || usuario <= 0) {
+while ( isNaN(usuario) || usuario === '' || usuario < 0) {
     usuario = prompt('Datos incorrectos. Ingrese su edad:');
 }
 
-if (usuario < edadPermitida) {
+if (usuario < edadPermitida & usuario > 0) {
     //console.log('Edad: ' + usuario + '. El usuario es menor de edad');
     msg = alert('Edad: ' + usuario + '. El usuario es menor de edad')
 } else if ( usuario >= 18 & usuario < 100) {

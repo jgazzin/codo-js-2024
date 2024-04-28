@@ -1,0 +1,190 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+
+  min-height: 100vh;
+
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  color: #fff;
+}
+
+/* globales */
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+p {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* utilitarios */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.actual {
+  color: rgb(252, 198, 243);
+}
+
+.activa {
+    background-color: #fff;
+    opacity: 0.5;
+
+}
+
+.activa p {
+    color: gray;
+}
+
+/* encabezado */
+header,
+footer {
+  background-color: blueviolet;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nav-logo {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.nav-logo span {
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+nav li {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+nav li:hover {
+  text-shadow: grey 2px 0 2px;
+}
+
+/* cuerpo */
+
+.cuerpo h1 {
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+
+.cuerpo h1 > span {
+  text-transform: uppercase;
+}
+
+.cuerpo h2 {
+  text-transform: capitalize;
+  color: grey;
+}
+
+.card-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+.card {
+    width: 30%;
+    border: 1px #fff solid;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .card-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+.card:hover {
+    box-shadow:  grey 2px 0 2px;
+    
+}
+
+.card img {
+    width: 100%;
+    padding: 10px;
+}
+
+.card h2 {
+    padding: 10px 0;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  text-transform: capitalize;
+}
+
+@media (max-width: 576px) {
+    footer {
+        position: relative;
+        margin-top: 20px;
+    }
+}
